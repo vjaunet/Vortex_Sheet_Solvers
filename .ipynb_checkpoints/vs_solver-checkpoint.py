@@ -127,7 +127,6 @@ class vortex_sheet:
         St = 0.4
         omega = 2*np.pi*St*param['Mj']
         k_ini = omega/(0.9*param['Mj']) - 2.2j
-        print(k_ini)
 
         for solv in ['secant', 'mnewton', 'halley', 'muller',
                      'illinois', 'pegasus', 'anderson', 'ridder', 'anewton', 'bisect']:
@@ -144,7 +143,6 @@ class vortex_sheet:
             time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
             print('       ',elapsed_time, 'seconds')
 
-        print('=============================================================')
-        print("for Mj=1.2, St=0.4 and k_ini = omega/(0.9*param['Mj']) - 2.2j :")
+
         print("Python expected value k_kh = 2.732  - 1.963j")
         print("Octave expected value k_kh = 2.9660 - 2.1730j")

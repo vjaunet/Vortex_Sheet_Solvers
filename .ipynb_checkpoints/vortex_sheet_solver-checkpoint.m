@@ -9,7 +9,7 @@ clear all; %close all;
 %% Paramters ===============================
 %St= 0.1:0.001:0.2;   % strouhal numbers to be computed
 %St= 0.5:-0.001:0.4;   % strouhal numbers to be computed
-St=[0.2, 0.2];
+St=[0.4, 0.4];
 
 params.Mj    = 1.2;  % jet Mach number
 params.gam   = 1.4;  % ratio of specific heats
@@ -20,7 +20,7 @@ params.Rj    = 0.5;  % jet radius
 
 %% initial guess solutions =================
 omega = 2*pi*St*params.Mj;
-k_th  = omega/(0.9*params.Mj) - 1.5j;
+k_th  = omega/(0.9*params.Mj) - 2.1j;
 
 
 %% Computing the dispersion relation roots =
